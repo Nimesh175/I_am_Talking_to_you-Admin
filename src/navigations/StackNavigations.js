@@ -5,7 +5,8 @@ import LoginScreen from '../screens/AdminLoginScreen';
 import DashboardScreen from '../screens/AdminDashboardScreen';
 import ManageUserScreen from '../screens/AdminManageUserScreen';
 import ManageAppScreen from '../screens/AdminManageAppScreen';
-import NotificationHistoryScreen from '../screens/NotificationHistoryScreen';
+import NotificationHistoryScreen from '../screens/AdminNotificationHistoryScreen';
+import AddCategoryScreen from '../screens/AdminAddCategoryScreen';
 
 
 const StackNavigations = () => (
@@ -15,7 +16,8 @@ const StackNavigations = () => (
           <Scene key="dashboardScreen" component={DashboardScreen} hideNavBar={true} /> 
           <Scene key="manageUserScreen" component={ManageUserScreen} hideNavBar={true} /> 
           <Scene key="manageAppScreen" component={ManageAppScreen} hideNavBar={true}  /> 
-          <Scene key="notificationHistoryScreen" component={NotificationHistoryScreen} hideNavBar={true} initial={true} /> 
+          <Scene key="notificationHistoryScreen" component={NotificationHistoryScreen} hideNavBar={true}  /> 
+          <Scene key="addCategoryScreen" component={AddCategoryScreen} hideNavBar={true} initial={true}  /> 
         
         </Stack>
     </Router>

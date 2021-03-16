@@ -69,7 +69,7 @@ const HamPopupMenu = () => {
                               </TouchableOpacity>
 
                               {/*  list 04 >> sub 03  */}
-                              <TouchableOpacity>
+                              <TouchableOpacity onPress={()=> Actions.manageSubcriptionPlanScreen()}>
                                    <View style={styles.list2}>
                                         <Text style={styles.list__text2}>Manage Subcription Plan</Text>
                                    </View>
@@ -82,7 +82,7 @@ const HamPopupMenu = () => {
 
 
                {/* list 05 */}
-               <TouchableOpacity>
+               <TouchableOpacity onPress={()=> Actions.manageRatingAndReviewScreen()}>
                     <View style={styles.list}>
                          <Text style={styles.list__text}>View Ratings & Reviews</Text>
                     </View>

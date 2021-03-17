@@ -96,7 +96,7 @@ const HamPopupMenu = () => {
                </TouchableOpacity>
 
                 {/* list 07 */}
-                <TouchableOpacity>
+                <TouchableOpacity  onPress={()=> Actions.manageStaticPageScreen()}>
                     <View style={styles.list}>
                          <Text style={styles.list__text}>Manage Static Pages</Text>
                     </View>

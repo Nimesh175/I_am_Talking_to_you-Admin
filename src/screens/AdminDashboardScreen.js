@@ -21,7 +21,7 @@ const AdminDashboardScreen = () => {
                          <HamburgerOption/>
                    
 
-                    <EmptyView style={{marginTop: dimensions.heightLevel1}} />
+                   
                     <Text style={styles.title}>Dashboard</Text>
 
                     <EmptyView style={{marginTop : dimensions.heightLevel2}} />

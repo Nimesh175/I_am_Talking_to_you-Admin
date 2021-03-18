@@ -37,8 +37,8 @@ export default (state=initialState , action) => {
      switch (action.type) {
           case manageAppActionTypes.ADD_MAIN_CHAPTER:
                var chapterList = state.chapterArray
-               chapterList[action.value.index]=action.value;
-               console.log(chapterList , "  <<<<<<<<<<<<<<<  [Reducer] ")
+               // chapterList[action.value.index]=action.value;
+               chapterList.push(action.value)
                return {
                     ...state,
                     chapterArray : chapterList
@@ -59,7 +59,7 @@ export default (state=initialState , action) => {
 
                case manageAppActionTypes.UPDATE_MAIN_CHAPTER:
                     
-                   var chapterList = [state.chapterArray]
+                   var chapterList = state.chapterArray
                    chapterList[action.value.index]=action.value;
                return {
                     ...state,
@@ -68,7 +68,16 @@ export default (state=initialState , action) => {
                } 
 
           case manageAppActionTypes.DELETE_MAIN_CHAPTER:
-               return {  }     
+               var chapterList = state.chapterArray
+               
+               console.log(chapterList.length , "  <<<<<<<<<<<<<<< before [Reducer] "  , "action.value >>" , Array.isArray(chapterList))
+               chapterList.splice(action.value,1)
+               
+               console.log(chapterList, "  <<<<<<<<<<<<<<< after [Reducer] ")
+               return { 
+                    ...state,
+                    chapterArray : chapterList,
+                }     
                
 
 

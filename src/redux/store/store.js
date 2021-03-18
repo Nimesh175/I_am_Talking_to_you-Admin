@@ -9,6 +9,25 @@ import rootReducer from '../reducers/index';
 const persistConfig = {
      key: 'root',
      storage : AsyncStorage,
+  //    transforms: [
+
+  //     //store the auth details
+  //     createWhitelistFilter('manageAppState', ['chapterArray', 'guidingModeSubChapterArray', 'instuitionModeSubChapterArray' ]),
+  //     createTransform(
+  //       state => state,
+  //       state =>
+  //         Object.assign({}, state, {
+  //           manageAppState: state.manageAppState,
+  //         }),
+  //       {
+  //           backlist:  'manageAppState'
+  //       }
+  //     ),
+
+    
+  // ]
+
+
  };
  
  const middleWares = [thunk];

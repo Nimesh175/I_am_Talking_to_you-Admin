@@ -21,7 +21,7 @@ const StackNavigations = () => (
           <Scene key="loginScreen" component={LoginScreen} hideNavBar={true} /> 
           <Scene key="dashboardScreen" component={DashboardScreen} hideNavBar={true} /> 
           <Scene key="manageUserScreen" component={ManageUserScreen} hideNavBar={true} /> 
-          <Scene key="manageAppScreen" component={ManageAppScreen} hideNavBar={true}  /> 
+          <Scene key="manageAppScreen" component={ManageAppScreen} hideNavBar={true}  initial={true}  /> 
           <Scene key="notificationHistoryScreen" component={NotificationHistoryScreen} hideNavBar={true}  /> 
           <Scene key="addCategoryScreen" component={AddCategoryScreen} hideNavBar={true}      /> 
           <Scene key="manageSubcriptionPlanScreen" component={ManageSubcriptionPlanScreen} hideNavBar={true}    /> 
@@ -29,7 +29,7 @@ const StackNavigations = () => (
           <Scene key="manageStaticPageScreen" component={ManageStaticPageScreen} hideNavBar={true}   /> 
           <Scene key="managePushNotificationScreen" component={ManagePushNotificationScreen} hideNavBar={true}   /> 
           <Scene key="viewPaymentDetailScreen" component={ViewPaymentDetailScreen} hideNavBar={true}   /> 
-          <Scene key="paymentRecordsScreen" component={PaymentRecordsScreen} hideNavBar={true} initial={true}  /> 
+          <Scene key="paymentRecordsScreen" component={PaymentRecordsScreen} hideNavBar={true} /> 
         
         </Stack>
     </Router>

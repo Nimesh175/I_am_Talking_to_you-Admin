@@ -35,11 +35,11 @@ export const updateMainChapterAction = obj => {
     )
 }
 
-export const deleteMainChapterAction = data => {
+export const deleteMainChapterAction = id => {
     return (
         {
               type : manageAppActionTypes.DELETE_MAIN_CHAPTER,
-              value : data
+              value : id
         }
     )
 }

@@ -55,14 +55,14 @@ const HamPopupMenu = () => {
                     isSelected ?
                          <View style={{marginBottom : 5}}>
                               {/* list 04 >> sub 01 */}
-                              <TouchableOpacity>
+                              <TouchableOpacity onPress={()=> Actions.viewPaymentDetailScreen()}>
                                    <View style={styles.list2}>
                                         <Text style={styles.list__text2}>View Payment Details</Text>
                                    </View>
                               </TouchableOpacity>
 
                               {/*  list 04 >> sub 02  */}
-                              <TouchableOpacity>
+                              <TouchableOpacity onPress={()=> Actions.paymentRecordsScreen()}>
                                    <View style={styles.list2}>
                                         <Text style={styles.list__text2}>Payment Records</Text>
                                    </View>
@@ -89,7 +89,7 @@ const HamPopupMenu = () => {
                </TouchableOpacity>
 
                {/* list 06 */}
-               <TouchableOpacity>
+               <TouchableOpacity  onPress={()=> Actions.managePushNotificationScreen()}>
                     <View style={styles.list}>
                          <Text style={styles.list__text}>Manage Push Notifications</Text>
                     </View>

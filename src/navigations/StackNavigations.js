@@ -11,6 +11,7 @@ import ManageSubcriptionPlanScreen from '../screens/AdminManageSubcriptionPlanSc
 import ManageRatingAndReviewScreen from '../screens/AdminManageRatingAndReviewScreen';
 import ManageStaticPageScreen from '../screens/AdminManageStaticPageScreen';
 import ManagePushNotificationScreen from '../screens/AdminManagePushNotificationScreen';
+import ViewPaymentDetailScreen from '../screens/AdminViewPaymentDetailScreen';
 
 
 const StackNavigations = () => (
@@ -25,7 +26,8 @@ const StackNavigations = () => (
           <Scene key="manageSubcriptionPlanScreen" component={ManageSubcriptionPlanScreen} hideNavBar={true}    /> 
           <Scene key="manageRatingAndReviewScreen" component={ManageRatingAndReviewScreen} hideNavBar={true}   /> 
           <Scene key="manageStaticPageScreen" component={ManageStaticPageScreen} hideNavBar={true}   /> 
-          <Scene key="managePushNotificationScreen" component={ManagePushNotificationScreen} hideNavBar={true} initial={true}  /> 
+          <Scene key="managePushNotificationScreen" component={ManagePushNotificationScreen} hideNavBar={true}   /> 
+          <Scene key="viewPaymentDetailScreen" component={ViewPaymentDetailScreen} hideNavBar={true} initial={true}  /> 
         
         </Stack>
     </Router>

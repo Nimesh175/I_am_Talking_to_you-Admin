@@ -10,13 +10,11 @@ import { Rating, AirbnbRating } from 'react-native-ratings';
 import SearchField from '../components/SearchField';
 import FontAwesome5Icon from 'react-native-vector-icons/FontAwesome5';
 
-
 const TableRow =() => {
       const  _text = {fontFamily : fontFamilies.montserratBold , fontSize : fontSizes.fontMedium  , color : "rgba(0,0,0,0.6)" , textAlign : "center"}
      const table_row = {flexDirection : 'row' , justifyContent : 'space-between' ,backgroundColor : "rgba(250,250,250,1)" , paddingHorizontal : 2 , paddingVertical : 5, borderRadius : 10 , width : "100%" , marginTop : dimensions.heightLevel1 * 0.5}
      return (
-          <View style={table_row}>
-
+               <View style={table_row}>
                <View style={{width : "24%" , justifyContent : "flex-start" , alignItems :"center"}}>
                      <Text  style={_text}>11/11/2021</Text>
                </View>
@@ -25,14 +23,16 @@ const TableRow =() => {
                      <Text  style={_text}>Loream  LoremLoremLoremLoremLorem LoremLoremLorem</Text>
                </View>
 
-               <TouchableOpacity 
+               <TouchableOpacity  
                          style={{width : "17%" , justifyContent : "flex-start" , alignItems :"center" ,backgroundColor : 'rgba(0,0,0,0)', padding : 5 }} >
                      <Text  style={ [ _text , { transform: [{ rotate: '90deg'}] , fontSize : fontSizes.fontLarge }] } >...</Text>
                </TouchableOpacity>
-
            </View>
+
      )
 }
+
+
 
 
 const AdminManagePushNotificationScreen = () => {
@@ -163,3 +163,8 @@ const styles = StyleSheet.create({
 });
 
 export default AdminManagePushNotificationScreen
+
+
+
+
+// Not completed << POP UP modal has to create

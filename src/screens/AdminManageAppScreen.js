@@ -20,6 +20,7 @@ import {
      setOneMainChapterAction,
      hideUpdateMainChapter
      } from '../redux/actions/manageAppActions';
+import VideoPickerv3 from '../components/VideoPickerv3';
 
 
 // create list item
@@ -486,6 +487,17 @@ const AdminManageAppScreen = () => {
                                    
                                    <View style={{alignSelf : 'flex-start'}}>
                                         <ImagePickerv3 />
+                                   </View>
+                              </View>   
+
+
+                               {/* chapterlogo upload */}
+                               <View style={styles.inputGroup}>
+                                   <EmptyView style={{marginBottom : dimensions.heightLevel1 }} />
+                                   <Text style={styles.placeholderText}>Chapter Video</Text>
+                                   
+                                   <View style={{alignSelf : 'flex-start'}}>
+                                        <VideoPickerv3/>
                                    </View>
                               </View>   
 

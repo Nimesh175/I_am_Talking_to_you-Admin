@@ -18,10 +18,10 @@ import PaymentRecordsScreen from '../screens/AdminPaymentRecordsScreen';
 const StackNavigations = () => (
     <Router>
         <Stack key="rootStacks">
-          <Scene key="loginScreen" component={LoginScreen} hideNavBar={true} /> 
+          <Scene key="loginScreen" component={LoginScreen} hideNavBar={true}  /> 
           <Scene key="dashboardScreen" component={DashboardScreen} hideNavBar={true} /> 
           <Scene key="manageUserScreen" component={ManageUserScreen} hideNavBar={true} /> 
-          <Scene key="manageAppScreen" component={ManageAppScreen} hideNavBar={true}  initial={true}  /> 
+          <Scene key="manageAppScreen" component={ManageAppScreen} hideNavBar={true} initial={true}  /> 
           <Scene key="notificationHistoryScreen" component={NotificationHistoryScreen} hideNavBar={true}  /> 
           <Scene key="addCategoryScreen" component={AddCategoryScreen} hideNavBar={true}      /> 
           <Scene key="manageSubcriptionPlanScreen" component={ManageSubcriptionPlanScreen} hideNavBar={true}    /> 
